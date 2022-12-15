@@ -12,59 +12,60 @@ AggMethod='max'
 DefuzzMethod='centroid'
 
 [Input1]
-Name='LuongQuanAo'
-Range=[0 20]
+Name='MassClothing'
+Range=[0 1]
 NumMFs=3
-MF1='mf1':'trimf',[-8.333 0 8.333]
-MF2='mf2':'trimf',[1.667 10 18.33]
-MF3='mf3':'trimf',[11.67 20 28.33]
+MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
+MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
+MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
 
 [Input2]
-Name='DoBan'
-Range=[0 10]
+Name='DegreeOfDirt'
+Range=[0 1]
 NumMFs=3
-MF1='mf1':'trimf',[-4.167 0 4.167]
-MF2='mf2':'trimf',[0.8333 5 9.167]
-MF3='mf3':'trimf',[5.833 10 14.17]
+MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
+MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
+MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
 
 [Input3]
-Name='NhietDoNuoc'
-Range=[18 80]
+Name='WaterTemperature'
+Range=[0 1]
 NumMFs=3
-MF1='mf1':'trimf',[-7.833 18 43.83]
-MF2='mf2':'trimf',[23.17 49 74.83]
-MF3='mf3':'trimf',[54.17 80 105.8]
+MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
+MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
+MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
 
 [Input4]
-Name='LoaiQuanAo'
-Range=[0 10]
+Name='TypeClothing'
+Range=[0 1]
 NumMFs=3
-MF1='mf1':'trimf',[-4.167 0 4.167]
-MF2='mf2':'trimf',[0.8333 5 9.167]
-MF3='mf3':'trimf',[5.833 10 14.17]
+MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
+MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
+MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
 
 [Output1]
-Name='LuongXaPhong'
-Range=[0 1]
+Name='DetergentLevel'
+Range=[0 200]
 NumMFs=3
-MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+MF1='it':'trimf',[0 30 60]
+MF2='trungbinh':'trimf',[40 90 140]
+MF3='nhieu':'linsmf',[120 160]
 
 [Output2]
-Name='ThoiGianGiat'
-Range=[0 1]
+Name='WashingTime'
+Range=[0 90]
 NumMFs=3
-MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+MF1='nhanh':'linzmf',[0 35]
+MF2='vua':'trimf',[15 45 75]
+MF3='lau':'linsmf',[55 90]
 
 [Output3]
-Name='LuongNuoc'
-Range=[0 1]
-NumMFs=3
-MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+Name='WaterLevel'
+Range=[0 10]
+NumMFs=4
+MF1='it':'trimf',[0 2 4]
+MF2='vua':'trimf',[2 4 6]
+MF3='nhieu':'trimf',[4 6 8]
+MF4='ratnhieu':'linsmf',[6 8]
 
 [Rules]
