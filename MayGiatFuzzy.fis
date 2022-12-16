@@ -13,51 +13,53 @@ DefuzzMethod='centroid'
 
 [Input1]
 Name='MassClothing'
-Range=[0 1]
+Range=[0 10]
 NumMFs=3
-MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+MF1='it':'trimf',[0 2 4]
+MF2='vua':'trapmf',[3 5 6 8]
+MF3='nhieu':'linsmf',[7.25 9]
 
 [Input2]
-Name='DegreeOfDirt'
-Range=[0 1]
-NumMFs=3
-MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+Name='DirtinessOfClothing'
+Range=[0 10]
+NumMFs=4
+MF1='banit':'trimf',[0 1.5 3]
+MF2='banvua':'trimf',[2 3.5 5]
+MF3='ratban':'linsmf',[6.5 8]
+MF4='bannhieu':'trimf',[4.01739130434783 5.51739130434783 7.01739130434783]
 
 [Input3]
 Name='WaterTemperature'
-Range=[0 1]
+Range=[18 70]
 NumMFs=3
-MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+MF1='lanh':'linzmf',[18 40]
+MF2='am':'trimf',[35 47.5 65]
+MF3='nong':'linsmf',[55 65]
 
 [Input4]
 Name='TypeClothing'
-Range=[0 1]
-NumMFs=3
-MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+Range=[0 10]
+NumMFs=4
+MF1='silk':'trimf',[0 1.5 3]
+MF2='cotton':'trimf',[2 3.5 5]
+MF3='jean':'linsmf',[6.5 8.5]
+MF4='woolean':'trapmf',[4 5.5 6.5 8]
 
 [Output1]
 Name='DetergentLevel'
 Range=[0 200]
 NumMFs=3
 MF1='it':'trimf',[0 30 60]
-MF2='trungbinh':'trimf',[40 90 140]
-MF3='nhieu':'linsmf',[120 160]
+MF2='trungbinh':'trapmf',[40 70 110 140]
+MF3='nhieu':'linsmf',[120 150]
 
 [Output2]
 Name='WashingTime'
 Range=[0 90]
 NumMFs=3
-MF1='nhanh':'linzmf',[0 35]
-MF2='vua':'trimf',[15 45 75]
-MF3='lau':'linsmf',[55 90]
+MF1='nhanh':'trimf',[0 17.5 35]
+MF2='vua':'trapmf',[20 37.5 57.5 75]
+MF3='lau':'linsmf',[65 80]
 
 [Output3]
 Name='WaterLevel'
