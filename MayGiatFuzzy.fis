@@ -32,9 +32,9 @@ MF4='bannhieu':'trimf',[4.01739130434783 5.51739130434783 7.01739130434783]
 Name='WaterTemperature'
 Range=[18 70]
 NumMFs=3
-MF1='lanh':'linzmf',[18 40]
-MF2='am':'trimf',[35 47.5 65]
-MF3='nong':'linsmf',[55 65]
+MF1='lanh':'trimf',[18 29 40]
+MF2='am':'trapmf',[35 46 54 65]
+MF3='nong':'linsmf',[55 66]
 
 [Input4]
 Name='TypeClothing'
@@ -65,9 +65,9 @@ MF3='lau':'linsmf',[65 80]
 Name='WaterLevel'
 Range=[0 10]
 NumMFs=4
-MF1='it':'trimf',[0 2 4]
-MF2='vua':'trimf',[2 4 6]
-MF3='nhieu':'trimf',[4 6 8]
-MF4='ratnhieu':'linsmf',[6 8]
+MF1='it':'trimf',[0 1.5 3]
+MF2='vua':'trimf',[2 3.5 5]
+MF3='nhieu':'trimf',[4.5 6 7.5]
+MF4='ratnhieu':'linsmf',[7 8.5]
 
 [Rules]
