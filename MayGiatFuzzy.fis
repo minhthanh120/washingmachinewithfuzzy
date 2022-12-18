@@ -12,21 +12,21 @@ AggMethod='max'
 DefuzzMethod='centroid'
 
 [Input1]
-Name='MassClothing'
+Name='DirtinessOClothing'
 Range=[0 10]
 NumMFs=3
-MF1='it':'trimf',[0 2 4]
-MF2='vua':'trapmf',[3 5 6 8]
-MF3='nhieu':'linsmf',[7.25 9]
+MF1='banit':'trimf',[0 2 4]
+MF2='banvua':'trapmf',[3 5 6 8]
+MF3='bannhieu':'linsmf',[7.25 9]
 
 [Input2]
-Name='DirtinessOfClothing'
+Name='MassClothing'
 Range=[0 10]
 NumMFs=4
-MF1='banit':'trimf',[0 1.5 3]
-MF2='banvua':'trimf',[2 3.5 5]
-MF3='ratban':'linsmf',[6.5 8]
-MF4='bannhieu':'trimf',[4.01739130434783 5.51739130434783 7.01739130434783]
+MF1='it':'trimf',[0 1.5 3]
+MF2='vua':'trimf',[2 3.5 5]
+MF3='ratnhieu':'linsmf',[6.5 8]
+MF4='nhieu':'trimf',[4.01739130434783 5.51739130434783 7.01739130434783]
 
 [Input3]
 Name='WaterTemperature'
